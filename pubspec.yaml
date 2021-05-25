@@ -1,11 +1,11 @@
 name: form_builder_vat_field
 description: Field for European VAT number input for flutter_form_builder package.
 version: 0.1.0
-homepage: https://github.com/sarbogast/form_builder_vat_field
+homepage: https://github.com/epseelon/form_builder_vat_field
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
-  flutter: "^2.0.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:
