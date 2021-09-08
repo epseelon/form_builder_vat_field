@@ -123,7 +123,7 @@ class FormBuilderVatField extends FormBuilderField<String> {
             final state = field as _FormBuilderVatFieldState;
 
             return InputDecorator(
-              decoration: state.decoration(),
+              decoration: state.decoration,
               child: Row(
                 children: <Widget>[
                   GestureDetector(
