@@ -9,9 +9,11 @@ class VatFormBuilderValidators {
     required String errorText,
   }) {
     return (T? valueCandidate) {
-      if (valueCandidate == null ||
-          (valueCandidate is String &&
-              VatUtils.parse(valueCandidate) == null)) {
+      if (valueCandidate == null) {
+        return null;
+      }
+      if (!(valueCandidate is String) ||
+          VatUtils.parse(valueCandidate) == null) {
         return errorText;
       }
       return null;
